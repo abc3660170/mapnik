@@ -9,5 +9,5 @@ RUN python scons/scons.py configure | more
 RUN python scons/scons.py JOBS=4
 RUN python scons/scons.py install
 RUN mapnik-config -v
-ldconfig
+RUN ldconfig
 
